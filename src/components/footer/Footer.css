@@ -1,0 +1,87 @@
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 60px 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.newsletter {
+  display: flex;
+  margin: 20px 0;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+}
+
+.newsletter button {
+  padding: 12px 18px;
+  background: #00ffd1;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.socials span {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #00ffd1;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  margin-top: 20px;
+}
+
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}

@@ -1,0 +1,84 @@
+.cta {
+  padding: 40px 0;
+}
+.cta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cta-heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.cta-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.cta-arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #f5f5f5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cta-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-6px);
+}
+
+.cta-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.cta-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cta-list li {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.cta-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00a99d;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .cta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+}

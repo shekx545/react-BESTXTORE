@@ -1,0 +1,30 @@
+.about-header {
+  background: #f5f5f5;
+  padding: 80px 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.about-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-container p {
+  font-size: 14px;
+  color: #777;
+}
+
+.about-container span {
+  margin: 0 6px;
+}
+
+.about-container strong {
+  color: #222;
+}
