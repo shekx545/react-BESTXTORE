@@ -1,6 +1,7 @@
 .cta {
   padding: 40px 0;
 }
+
 .cta-header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +30,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .cta-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,11 +76,61 @@
 @media (max-width: 1024px) {
   .cta-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .cta-heading {
+    font-size: 24px;
+  }
+
+  .cta-card {
+    padding: 20px;
+  }
+
+  .cta-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .cta-list li {
+    font-size: 13px;
+  }
+
+  .cta-arrows button {
+    width: 36px;
+    height: 36px;
   }
 }
-
 @media (max-width: 600px) {
   .cta-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cta-heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .cta-card {
+    padding: 16px;
+  }
+
+  .cta-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .cta-list li {
+    font-size: 12px;
+  }
+
+  .cta-arrows {
+    gap: 8px;
+  }
+
+  .cta-arrows button {
+    width: 32px;
+    height: 32px;
   }
 }

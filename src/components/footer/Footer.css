@@ -1,3 +1,4 @@
+
 .footer {
   background: #111;
   color: #ccc;
@@ -77,11 +78,85 @@
   margin-top: 20px;
 }
 
-
 .footer-bottom {
   margin-top: 40px;
   border-top: 1px solid #222;
   padding-top: 15px;
   text-align: center;
   font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 40px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 25px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .footer-about p,
+  .footer-links li,
+  .footer-contact p {
+    font-size: 13px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    padding: 10px;
+  }
+
+  .socials span {
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 20px 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .footer-about p,
+  .footer-links li,
+  .footer-contact p {
+    font-size: 12px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+
+  .socials span {
+    margin-right: 8px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
 }

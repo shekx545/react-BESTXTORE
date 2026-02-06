@@ -81,3 +81,102 @@
 .highlight-btn:hover {
   opacity: 0.9;
 }
+@media (max-width: 1024px) {
+  .highlight {
+    padding: 40px;
+    min-height: 360px;
+  }
+
+  .highlight-title {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .highlight-subtitle {
+    font-size: 13px;
+  }
+
+  .highlight-product {
+    font-size: 20px;
+  }
+
+  .highlight-desc {
+    font-size: 13px;
+  }
+
+  .highlight-price {
+    gap: 16px;
+  }
+
+  .price {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .price strong {
+    font-size: 16px;
+  }
+
+  .old {
+    font-size: 12px;
+  }
+
+  .highlight-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-content {
+    max-width: 100%;
+  }
+
+  .highlight-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .highlight-subtitle {
+    font-size: 12px;
+  }
+
+  .highlight-product {
+    font-size: 18px;
+  }
+
+  .highlight-desc {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .highlight-price {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .price {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .price strong {
+    font-size: 16px;
+  }
+
+  .old {
+    font-size: 11px;
+  }
+
+  .highlight-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

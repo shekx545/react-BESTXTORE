@@ -1,6 +1,7 @@
 .intro {
   padding: 60px 0;
 }
+
 .intro-header {
   display: flex;
   justify-content: space-between;
@@ -23,6 +24,7 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
 .intro-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -92,13 +94,101 @@
 }
 
 @media (max-width: 1024px) {
+  .intro {
+    padding: 50px 0;
+  }
+
+  .intro-header h2 {
+    font-size: 22px;
+  }
+
+  .intro-arrows button {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+  }
+
   .intro-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .intro-image {
+    height: 200px;
+  }
+
+  .badge,
+  .discount {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .price span {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .reviews {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 600px) {
+  .intro {
+    padding: 40px 15px;
+  }
+
+  .intro-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .intro-header h2 {
+    font-size: 20px;
+  }
+
+  .intro-arrows button {
+    width: 28px;
+    height: 28px;
+    margin-left: 0;
+  }
+
   .intro-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .intro-image {
+    height: 180px;
+  }
+
+  .badge,
+  .discount {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .price span {
+    font-size: 11px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .reviews {
+    font-size: 11px;
   }
 }

@@ -23,6 +23,7 @@
 .flash-cards {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap; 
 }
 
 .flash-card {
@@ -30,7 +31,8 @@
   border-radius: 16px;
   padding: 20px;
   display: flex;
-  width: 520px;
+  width: 520px; 
+  flex: 1 1 100%; 
 }
 
 .card-image {
@@ -134,4 +136,94 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .flash-sale {
+    padding: 40px 40px;
+  }
+
+  .flash-header h2 {
+    font-size: 24px;
+  }
+
+  .flash-card {
+    width: 100%;
+    flex-direction: row; 
+    padding: 16px;
+  }
+
+  .card-image {
+    width: 40%;
+  }
+
+  .card-content {
+    width: 60%;
+    padding-left: 16px;
+  }
+
+  .card-content h3 {
+    font-size: 13px;
+  }
+
+  .price, .rating, .stock, .timer {
+    font-size: 12px;
+  }
+
+  .timer div {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .add-cart {
+    padding: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .flash-sale {
+    padding: 30px 20px;
+  }
+
+  .flash-header h2 {
+    font-size: 20px;
+  }
+
+  .flash-card {
+    flex-direction: column; 
+    width: 100%;
+    padding: 12px;
+  }
+
+  .card-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .card-content h3 {
+    font-size: 12px;
+  }
+
+  .price, .rating, .stock, .timer {
+    font-size: 11px;
+  }
+
+  .timer div {
+    padding: 4px;
+    font-size: 9px;
+  }
+
+  .add-cart {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .arrows span {
+    font-size: 18px;
+    margin-left: 6px;
+  }
 }

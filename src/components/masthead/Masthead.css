@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   padding: 20px;
+  flex-wrap: wrap; 
 }
 
 .masthead-card {
@@ -9,6 +10,7 @@
   background-color: #f5f5f5;
   border-radius: 12px;
   padding: 30px;
+  min-width: 250px;
 }
 
 .category {
@@ -33,4 +35,53 @@
 
 .masthead-card button:hover {
   opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .masthead {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .masthead-card {
+    padding: 24px;
+  }
+
+  .category {
+    font-size: 13px;
+  }
+
+  .masthead-card h2 {
+    font-size: 24px;
+  }
+
+  .masthead-card button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .masthead {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .masthead-card {
+    padding: 20px;
+  }
+
+  .category {
+    font-size: 12px;
+  }
+
+  .masthead-card h2 {
+    font-size: 20px;
+  }
+
+  .masthead-card button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
 }

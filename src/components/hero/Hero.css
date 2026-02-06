@@ -88,8 +88,39 @@
 }
 
 @media (max-width: 900px) {
+    .hero {
+        padding: 0 30px;
+        height: auto; 
+    }
+
     .hero-content h1 {
         font-size: 34px;
+    }
+
+    .hero-brand {
+        font-size: 24px;
+    }
+
+    .hero-category {
+        font-size: 13px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        max-width: 350px;
+    }
+
+    .hero-features {
+        padding: 12px;
+    }
+
+    .hero-features div {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 10px 24px;
+        font-size: 14px;
     }
 
     .hero-image-container {
@@ -99,5 +130,51 @@
     .hero-image {
         max-width: 300px;
         max-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-brand {
+        font-size: 20px;
+    }
+
+    .hero-category {
+        font-size: 12px;
+    }
+
+    .hero-desc {
+        font-size: 13px;
+        max-width: 280px;
+    }
+
+    .hero-features {
+        padding: 10px;
+    }
+
+    .hero-features div {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .hero-image {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
     }
 }

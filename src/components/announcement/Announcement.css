@@ -37,3 +37,51 @@
 .icon {
   font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .announcement {
+    flex-direction: column; 
+    margin-top: 40px;     
+  }
+
+  .announcement-item {
+    width: 100%;        
+    justify-content: flex-start;
+    padding: 12px 16px;    
+  }
+
+  .announcement-item h4 {
+    font-size: 12px;    
+  }
+
+  .announcement-item p {
+    font-size: 10px; 
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement {
+    margin-top: 20px;
+  }
+
+  .announcement-item {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .announcement-item h4 {
+    font-size: 11px;
+  }
+
+  .announcement-item p {
+    font-size: 9px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}

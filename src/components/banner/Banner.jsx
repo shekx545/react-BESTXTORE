@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import MapmarketIcon from "../../assets/banner/Mapmarket.png";
 import "./Banner.css";
 
 const Banner = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+
   return (
     <header className="Banner">
       <div className="left">
@@ -14,7 +19,11 @@ const Banner = () => {
         </select>
       </div>
 
-      <nav className="nav">
+      <div className="burger" onClick={toggleSidebar}>
+        &#9776;
+      </div>
+
+      <nav className={`nav ${sidebarOpen ? "open" : ""}`}>
         <Link to="/">Product</Link>
         <Link to="/flash-sale">Flash Sale</Link>
         <Link to="/best-sellers">Best Sellers</Link>
