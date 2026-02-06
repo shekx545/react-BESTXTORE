@@ -5,6 +5,8 @@
   padding: 15px 40px;
   border-bottom: 1px solid #eee;
   background: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .category-select {
@@ -13,6 +15,13 @@
   border: 1px solid #ddd;
   background: #000;
   color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  font-size: 26px;
   cursor: pointer;
 }
 
@@ -26,86 +35,11 @@
   color: #333;
   font-weight: 500;
   position: relative;
+  transition: color 0.3s ease;
 }
 
-.nav a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #333;
-}
-
-.store {
-  font-size: 14px;
-  color: #333;
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .Banner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .category-select {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .nav a {
-    font-size: 13px;
-  }
-
-  .store {
-    font-size: 12px;
-    text-align: left;
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Banner {
-    padding: 8px 12px;
-  }
-
-  .category-select {
-    padding: 5px 8px;
-    font-size: 11px;
-  }
-
-  .nav {
-    gap: 10px;
-  }
-
-  .nav a {
-    font-size: 11px;
-  }
-
-  .store {
-    font-size: 10px;
-    margin-top: 6px;
-  }
-}
-.nav {
-  display: flex;
-  gap: 25px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  position: relative;
+.nav a:hover {
+  color: #00a99d;
 }
 
 .nav a.active::after {
@@ -118,20 +52,48 @@
   background: #00a99d;
 }
 
+.store {
+  font-size: 14px;
+  color: #333;
+  text-align: right;
+}
+
+.store img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
+  .Banner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .category-select {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .burger {
+    display: block;
+  }
+
   .nav {
-    position: fixed; 
+    position: fixed;
     top: 0;
-    right: -250px;  
-    width: 250px;
+    right: -260px; 
+    width: 260px;
     height: 100%;
-    flex-direction: column;
     background-color: #fff;
-    gap: 0;
+    flex-direction: column;
     padding: 60px 20px;
-    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    gap: 0;
+    box-shadow: -3px 0 12px rgba(0,0,0,0.1);
     transition: right 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
   }
 
   .nav.open {
@@ -139,7 +101,35 @@
   }
 
   .nav a {
-    padding: 12px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  .store {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .Banner {
+    flex-direction: row;
+    padding: 8px 12px;
+  }
+
+  .category-select {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 12px 0;
+  }
+
+  .store {
+    font-size: 10px;
+    margin-top: 6px;
   }
 }
