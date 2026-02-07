@@ -74,21 +74,21 @@ const App = () => {
     },
     {
       id: 12,
-      title: "Canon EOS 450D Lens Kit 18-55mm",
+      title: "Canon Eos 450D Lens Kit 18-55Mm F/3.5-5.6 Is",
       price: 165,
       badge: "New",
       reviews: 12,
     },
     {
       id: 13,
-      title: "Apple iPad Pro 11 inch M1 2021 Wifi 128GB",
+      title: "Apple iPad Pro 11 inch M1 2021 Wifi 128GB|8GB",
       price: 425,
       badge: "New",
       reviews: 12,
     },
     {
       id: 14,
-      title: "Smart TV Samsung 4K 75 inch",
+      title: "Smart Tivi Samsung 4K 75 inch 75AU7000 UHD",
       price: 465,
       oldPrice: 595,
       badge: "New",
@@ -97,7 +97,7 @@ const App = () => {
     },
     {
       id: 15,
-      title: "JBL WH-CH520 Wireless Bluetooth Headphones",
+      title: "JJBL WH-CH520 Wireless Bluetooth Earphones Headset",
       price: 105,
       oldPrice: 155,
       badge: "New",
@@ -106,7 +106,7 @@ const App = () => {
     },
     {
       id: 16,
-      title: "Apple Watch Series 8 GPS Aluminum Case",
+      title: "Apple Watch Series 8 GPS - Cellular, Aluminum Case",
       price: 205,
       oldPrice: 255,
       badge: "New",
