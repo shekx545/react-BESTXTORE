@@ -29,6 +29,7 @@ function Footer() {
             <span><img src={Icon5} alt="TikTok" /></span>
           </div>
         </div>
+
         <div className="footer-links">
           <h4>Customer Service</h4>
           <ul>
@@ -41,6 +42,7 @@ function Footer() {
             <li>FAQs</li>
           </ul>
         </div>
+
         <div className="footer-links">
           <h4>About Us</h4>
           <ul>
@@ -53,6 +55,7 @@ function Footer() {
             <li>Trending Search</li>
           </ul>
         </div>
+
         <div className="footer-contact">
           <h4>Contact Us</h4>
           <p>📍 600 N Washington Ave Suite C203</p>
