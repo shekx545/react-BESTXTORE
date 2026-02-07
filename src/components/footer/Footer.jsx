@@ -9,7 +9,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left */}
         <div className="footer-about">
           <h2 className="logo">BESTXTORE</h2>
           <p>
@@ -30,8 +29,6 @@ function Footer() {
             <span><img src={Icon5} alt="TikTok" /></span>
           </div>
         </div>
-
-        {/* Customer Service */}
         <div className="footer-links">
           <h4>Customer Service</h4>
           <ul>
@@ -44,8 +41,6 @@ function Footer() {
             <li>FAQs</li>
           </ul>
         </div>
-
-        {/* About Us */}
         <div className="footer-links">
           <h4>About Us</h4>
           <ul>
@@ -58,8 +53,6 @@ function Footer() {
             <li>Trending Search</li>
           </ul>
         </div>
-
-        {/* Contact */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
           <p>📍 600 N Washington Ave Suite C203</p>
