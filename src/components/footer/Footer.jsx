@@ -1,8 +1,8 @@
-import Icon1 from "../../assets/footer/Icon1.png";
-import Icon2 from "../../assets/footer/Icon2.png";
-import Icon3 from "../../assets/footer/Icon3.png";
-import Icon4 from "../../assets/footer/Icon4.png";
-import Icon5 from "../../assets/footer/Icon5.png";
+import Icon1 from "../../assets/footer/icon1.png";
+import Icon2 from "../../assets/footer/icon2.png";
+import Icon3 from "../../assets/footer/icon3.png";
+import Icon4 from "../../assets/footer/icon4.png";
+import Icon5 from "../../assets/footer/icon5.png";
 import "./Footer.css";
 
 function Footer() {
